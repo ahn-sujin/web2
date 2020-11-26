@@ -1,0 +1,140 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+ul, ol, li{list-style: none}
+a{text-decoration: none;}
+
+/*pc버전*/
+#header{
+    width: 100%; position: fixed; left: 0px; top: 0px; 
+    z-index: 10; 
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+#header .inner{width: 1180px; height: 100px; margin: 0 auto;  }
+#header .inner::after{content: ''; clear: both; display: block;}
+
+#header .toggle{display: none ; float: left}
+#header .logo{float: left; margin-top: 25px; }
+#header .logo>a{display: block; color: #333}
+#header .search{float: right; margin: 35px 0 0 0; font-size: 20px; color: #333; cursor: pointer;}
+
+#header .gnb_wrap{float: right; margin-top: 40px;}
+#gnb >li{float: left; padding-right: 50px;}
+#gnb >li>a{display: block; text-transform: uppercase; color: #333;}
+
+@media screen and (max-width:1200px){
+    
+    #header .inner{width: 100%; height: 80px; padding: 0px 20px; }
+    #header .logo{margin-top: 18px; }
+    #header .search{margin-top: 25px;}
+    #header .gnb_wrap{margin-top: 30px;}
+    
+}
+@media screen and (max-width:980px){
+    
+   #header .inner{height: 60px;}
+    #header .toggle{display: block; margin : 18px 15px 0 0; font-size: 20px; color: #333; cursor: pointer;}
+   #header .logo{font-size: 28px; margin-top: 12px; }
+   #header .search{margin-top: 18px;}
+   #header .gnb_wrap{
+       display: none; position: fixed; left: 0; top: 60px; 
+       width: 300px; height: 100%; margin: 0; padding: 40px 0 0 0; background: white;
+       box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    #gnb >li{width: 100%; padding-right: 0px; text-align: center;}
+    #gnb >li>a{line-height: 50px;}
+
+}
+
+
+
+
+
+#visual{width: 100%; height: 500px; margin-top: 100px; background-color: lightblue;}
+
+@media screen and (max-width:1200px){
+    #visual{margin-top: 80px;}
+}
+@media screen and (max-width:980px){
+    #visual{margin-top: 60px;}
+}
+
+
+
+.content{width: 100%; padding: 100px 0px}
+.content .inner{width: 1180px; margin: 0 auto;}
+.content .inner::after{content: ''; clear: both; display: block}
+
+#con1 .box{width: 450px;}
+#con1 .box.pic{float: left; height: 400px; background: #ddd;}
+#con1 .box.txt{float: right;}
+
+#con1 .box.txt a.read_more{display: block; width: 200px; height: 50px; border: 1px solid #333; border-radius: 10px; text-align: center; font: 16px/50px 'Lato'; text-transform: capitalize;}
+
+@media screen and (max-width:1200px){
+    .content .inner{width: 940px;}
+}
+@media screen and (max-width:980px){
+    .content {padding: 80px 40px;}
+    .content .inner{width: 688px;}
+    #con1 .box{width: 100%;}
+    #con1 .box.pic{float: none;}
+    #con1 .box.txt{float: none; margin-bottom: 25px;}
+    
+}
+@media screen and (max-width:768px){
+    .content {padding: 60px 20px;}
+    .content .inner{width: 600px;}
+}
+@media screen and (max-width:640px){
+    
+    .content .inner{width: 440px;}
+
+}
+@media screen and (max-width:480px){
+    .content .inner{width: 320px;}
+}
+
+
+#con3 .box{float: left; width: 33.333%; padding: 30px; text-align: center; }
+#con3 .box .icon{width: 80px; height: 80px; margin: 0 auto; background: #ddd; border-radius: 100%; font-size: 32px; line-height: 76px; border: 2px solid #333;}
+
+#con3 .box .icon_title{color: #444; font-size: 15px; margin: 20px 0px 10px;}
+#con3 .box .icon_txt{color: #777; font-size: 14px;}
+
+@media screen and (max-width:768px){
+    #con3 .box{float: left; width: 50%;}
+}
+
+@media screen and (max-width:480px){
+    #con3 .box{float: left; width: 100%;}
+}
+
+#con4{background: pink; }
+#con4 .box{float: left; width: 46%; margin-right: 8%;}
+#con4 .box:last-of-type{margin-right: 0;}
+#con4 .box .description{font: 18px/2 'Lato';color: white; margin-bottom: 25px;}
+
+#con4 .box .profile .pic{float: left; width: 45px; height: 45px; border-radius: 100%; background: #444;}
+#con4 .box .profile .txt{float: left; margin-left: 20px;}
+/*#con4 .box .profile .txt .name{}
+#con4 .box .profile .txt .postion{}*/
+
+@media screen and (max-width:640px){
+    #con4 .box{width: 100%;}
+    #con4 .box:nth-of-type(2){display: none;}
+}
+
+#con5 {padding: 40px 0px;}
+#con5 .title{font-size: 0; text-indent: -9999px;}
+#con5 .box{float: left; width: 20%; height: 150px; border: 1px solid black; background:#444;}
+
+@media screen and  (max-width:768px){
+    #con5 .box{width: 33.333%}
+    #con5 .box:nth-child(4),
+    #con5 .box:nth-child(5){display: none;}
+}
+
+@media screen and  (max-width:640px){
+    #con5 .box{width: 50%}
+    #con5 .box:nth-child(3){display: none;}
+}

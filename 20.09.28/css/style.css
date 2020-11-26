@@ -1,0 +1,205 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+ul, ol, li{list-style: none}
+a{text-decoration: none;}
+
+/*pc버전*/
+#header{width: 100%;}
+#header .inner{width: 1180px; height: 100px; margin: 0 auto; }
+                                   /*위 오  아 왼*/
+#header .logo{float: left; padding: 15px 0 0 30px;}
+#header .logo>a{display: block; font-size: 48px; }
+
+#header .nav_wrap{float: right;}
+
+#header .nav_wrap .sns{margin: 15px 0 0 0; text-align: right;}
+#header .nav_wrap .sns>li{display: inline-block; margin: 0 8px; }
+#header .nav_wrap .sns>li>a{display: block; width: 25px; height: 25px; 
+    border-radius: 100%; font-size: 14px; background: rgba(0,0,0,0.5)}
+
+#gnb>li{float: left; width: auto; padding-left: 80px;}
+#gnb>li>a{display: block; width: 100%; line-height: 40px;}
+
+
+#header .toggle{display: none;}
+
+#visual{width: 100%; height: 600px; background: navy}
+
+@media screen and (max-width:1024px){
+    #header .inner{width: 100%; padding: 0px 40px;}
+    #header .logo{padding: 20px 0 0 0px;}
+    #gnb>li{padding-left: 40px;}
+}
+@media screen and (max-width:768px){
+    
+    #header{width: 100%;}
+    #header .inner{height: 80px;}
+    
+    #header .logo>a{font-size:36px;}
+    
+    #header .nav_wrap{
+        display: none; 
+        position: fixed; right: 0px; top: 0px; 
+        width: 300px; height: 100%; background: black;
+    }
+
+    #header .nav_wrap .sns{margin: 80px 0 40px 0 ; text-align: center;}
+    #header .nav_wrap .sns>li>a{color: white;}
+
+    #gnb>li{width: 100%; padding-left: 0px; text-align: center;}
+    #gnb>li>a{line-height: 50px; color: white;}
+
+    #header .toggle{
+        position: absolute; right: 40px; top: 20px; display: block; 
+        text-align: center; line-height: 50px;
+        font-size: 28px; color: black;
+    }
+    
+}
+@media screen and (max-width:640px){
+    
+}
+@media screen and (max-width:480px){
+    
+}
+
+/*----------------- Con1 pc버전---------------------*/
+#con1{width: 100%; padding: 100px 0px;}
+#con1 .inner{width: 1180px; margin: 0 auto; text-align: center;}
+#con1 .inner::after{content: ''; clear: both; display: block}
+#con1 .title{font: bold 24px '맑은 고딕'; color: #444}
+#con1 .txt{margin: 20px 0px 40px; font-size: 14px; color: #777}
+#con1 .box{float: left; width: 376px; margin-right: 25px; }
+#con1 .box:last-of-type{margin-right: 0}
+#con1 .box img{display: block; width: 100%;}
+
+/*----------------- Con1 반응형 버전---------------------*/
+@media screen and (max-width:1024px){
+    #con1{padding: 80px 40px;}
+    #con1 .inner{width:100%;}
+
+    #con1 .box{width: 31.333%;margin-right: 3%;}
+}
+@media screen and (max-width:768px){
+    #con1{padding: 80px 20px;}
+    #con1 .box{width: 32%; margin-right: 2%;}
+}
+@media screen and (max-width:640px){
+    #con1{padding: 60px 20px;}
+    #con1 .txt{margin-bottom: 30px;}
+    #con1 .box{width: 49%; margin-bottom: 12px;}
+    #con1 .box:nth-of-type(2n){margin-right: 0}
+}
+@media screen and (max-width:480px){
+    #con1 .box{width: 100%; margin-bottom: 20px;}
+}
+
+
+
+/*----------------- Con2 pc버전---------------------*/
+#con2{width: 100%; padding: 100px 0px;}
+#con2 .inner{width: 1180px; margin: 0 auto; text-align: center;}
+#con2 .inner::after{content: ''; clear: both; display: block}
+#con2 .title{font: bold 24px '맑은 고딕'; color: #444}
+#con2 .txt{margin: 20px 0px 40px; font-size: 14px; color: #777}
+
+#con2 .box{float: left; position: relative;  width: 376px; margin-right: 25px; }
+#con2 .box:last-of-type{margin-right: 0}
+
+
+#con2 .box img{display: block; width: 100%;}
+#con2 .box:hover .msg{opacity: 1;}
+
+#con2 .box .msg{
+    position: absolute; left: 0px; top: 0px; 
+    width: 100%; height: 100%; 
+    background: rgba(0, 0, 0, 0.7); text-align: center; color: white;
+    opacity: 0; transition: 0.5s;
+}
+#con2 .box .msg .msg_inner{
+    position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 50%;   
+}
+
+#con2 .box .msg .sub_title{font-size: 1.8rem; text-transform: capitalize;}
+#con2 .box .msg .sub_txt{font-size: 1rem;}
+
+/*------ Con2 반응형 ------*/
+@media screen and (max-width:1024px){
+    html{font-size: 14px}
+    
+    #con2{padding: 80px 40px;}
+    #con2 .inner{width:100%;}
+    #con2 .box{width: 31.333%;margin-right: 3%;}
+}
+@media screen and (max-width:768px){
+    
+    html{font-size: 12px}
+    #con2{padding: 80px 20px;}
+    #con2 .box{width: 32%; margin-right: 2%;}
+}
+@media screen and (max-width:640px){
+    #con2{padding: 60px 20px;}
+    #con2 .txt{margin-bottom: 30px;}
+    #con2 .box{width: 49%; margin-bottom: 12px;}
+    #con2 .box:nth-of-type(2n){margin-right: 0}
+}
+@media screen and (max-width:480px){
+    #con2 .box{width: 100%; margin-bottom: 20px;}
+}
+
+
+/*----------------- Con3 pc버전---------------------*/
+#con3{width:100%; padding: 100px 0px; text-align: center;}
+#con3 .inner{width:1180px; margin: 0 auto;}
+#con3 .inner::after{content:''; clear: both; display: block;}
+
+#con3 .title{font: bold 24px '맑은고딕'; color: #444;}
+#con3 .txt{margin: 20px 0px 40px; font-size:14px; color: #777;}
+
+#con3 .box{float:left; width:577.5px; margin-right:25px;}
+#con3 .box:last-of-type{margin-right: 0;}
+
+#con3 .box img{width:100%;}
+
+/*------ Con3 반응형 ------*/
+@media screen and (max-width:1024px){
+    #con3{padding: 80px 40px;}
+    #con3 .inner{width:100%;}
+    #con3 .box{width:48.5%; margin-right:3%;}
+}
+@media screen and (max-width:768px){
+    #con3{padding:80px 20px;}
+    #con3 .box{width:49%; margin-right:2%;}
+}
+@media screen and (max-width:640px){
+    #con3{padding:60px 20px;}
+    #con3 .box{width:100%; margin-right:0%; margin-bottom: 20px;}
+}
+
+/*----------------- Con4 pc버전---------------------*/
+#con4{width:100%; padding:100px 0; text-align: center;}
+#con4 .inner{width:1180px; margin: 0 auto;}
+#con4 .inner::after{content: ''; clear:both; display: block;}
+
+#con4 .title{font:bold 24px '맑은고딕'; color: #444;}
+#con4 .txt{margin: 20px 0 40px; font-size: 14px; color: #777; }
+
+#con4 .box{float:left; width:276.25px; margin-right:25px;}
+#con4 .box:last-of-type{margin-right:0;}
+
+#con4 .box img{ width:100%;}
+
+/*------ Con4 반응형 ------*/
+@media screen and (max-width:1024px){
+    #con4{padding:80px 40px;}
+    #con4 .inner{width:100%;}
+    #con4 .box{width:22.75%; margin:1%;}
+}
+@media screen and (max-width:768px){
+    #con4{padding:80px 20px;}
+    #con4 .box{width:48%; margin:1%; margin-bottom:5px;}
+}
+@media screen and (max-width:640px){
+    #con4{padding:60px 20px;}
+    #con4 .box{width:100%; margin-right:0%; margin-bottom: 20px;}
+}
+

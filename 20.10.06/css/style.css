@@ -1,0 +1,137 @@
+
+*{margin:0; padding:0; box-sizing: border-box; font-family: 'Noto Sans KR', sans-serif;}
+ol,ul,li{list-style: none;}
+a{text-decoration: none;  color: black;}
+
+/*----------------------------------header-------------------------------------*/
+
+#header{width:100%}
+#header .inner{width:1180px; height:100px; margin: 0 auto;}
+
+#header .logo{float: left; padding:25px 0 0 30px;}
+#header .logo>a{display: block; font-size:30px;}
+
+#header .nav_wrap{float:right;}
+
+#gnb>li{float:left; width:auto; padding:28px 0 0 80px; }
+#gnb>li>a{display: block; width:100%; line-height:40px; font-size:14px; }
+
+/*--------------------------------banner---------------------------------------*/
+
+#banner{width:100%; height:700px; background:gray;}
+
+/*---------------------------------con1--------------------------------------*/
+
+#con1{width: 100%; padding: 100px 0px;}
+#con1 .inner{width: 1180px; margin:0 auto;}
+#con1 .inner::after{content: ''; clear: both; display: block}
+
+#con1 .box{float:left; width:500px; height:440px; background: gray;}
+
+#con1 .content{float:right; width:500px; height:440px;}
+#con1 .content .title{font-size:35px;}
+#con1 .content .txt_01{font-size:20px;}
+#con1 .content .txt_02{font-size:16px;}
+#con1 .content .more{width:194px; height:51px; padding: 12px 0 0 50px; border:1px solid black; border-radius: 10px;}
+
+/*--------------------------------con2---------------------------------------*/
+
+#con2{width:100%; padding:72px 0; text-align: center; background:#F2F4F9;}
+#con2 .inner{width:1180px; margin: 0 auto;}
+#con2 .inner::after{content:''; clear: both; display: block;}
+
+#con2 .title{font-size:30px; margin-bottom:40px;}
+
+#con2 .wrap{width:100%; height:780px; position: relative;}
+
+#con2 .wrap .box{position: absolute; width:32%; height:32%; background:gray;}
+#con2 .wrap .box:nth-of-type(2n){height:64%}
+#con2 .wrap .box:nth-of-type(1){left:0; top:0 ;}
+#con2 .wrap .box:nth-of-type(2){left:34%;top:0 ;}
+#con2 .wrap .box:nth-of-type(3){right: 0;top: 0;}
+#con2 .wrap .box:nth-of-type(4){left:0 ;bottom:0 ;}
+#con2 .wrap .box:nth-of-type(5){left:34%;bottom:0 ;}
+#con2 .wrap .box:nth-of-type(6){right:0 ;bottom:0 ;}
+
+#con2 .inner .more{width:278px; height:51px; padding-top:12px; border:1px solid black; border-radius: 10px; margin: 60px auto;}
+
+/*--------------------------------con3---------------------------------------*/
+#con3{width:100%;padding:72px 0; text-align: center;}
+#con3 .inner{width:1180px; margin: 0 auto;}
+#con3 .inner::after{content:''; clear: both; display: block;}
+
+#con3 .title{font-size:30px; margin-bottom:50px;}
+
+#con3 .wrap{width:100%;position: relative;}
+
+#con3 .box{float: left; position: relative;  width: 376px; height:263px; margin: 0 25px 25px 0; background: gray;}
+#con3 .box:nth-of-type(3){margin-right: 0;}
+#con3 .box:nth-of-type(6){margin-right: 0;}
+
+#con3 .box .icon{width:96px; height:96px; margin:0 auto; background:black;}
+
+#con3 .box .sub_title{padding:15px 0;}
+
+#con3 .box .txt{color: #151515;}
+
+/*--------------------------------con4---------------------------------------*/
+#con4{width:100%;padding:72px 0; text-align: center; background: gray;}
+#con4 .inner{width:1180px; margin: 0 auto;}
+#con4 .inner::after{content:''; clear: both; display: block;}
+
+#con4 .title{font-size:30px; margin-bottom:40px;}
+
+#con4 .wrap{width:100%;position: relative;}
+#con4 .box{float: left; position: relative;  width: 577px; height:263px; margin-right:25px; background: white; }
+#con4 .box:last-of-type{margin-right: 0}
+
+#con4 .box .txt{text-align: left; font-size: 18px;}
+
+#con4 .box .person .person_img{float: left; width:50px; height:50px; margin-top:20px; background: black;}
+#con4 .box .person{position: relative;}
+#con4 .box .person .person_char{position: absolute; left:12%; margin-top:20px; text-align: left;}
+#con4 .box .person .person_char .person_caption{font-size: 14px;}
+
+
+/*--------------------------------con5---------------------------------------*/
+#con5{width:100%; padding:72px 0;}
+#con5 .inner{width:1180px; margin: 0 auto;}
+#con5 .inner::after{content:''; clear: both; display: block;}
+
+#con5 .wrap{width:100%; position: relative;}
+#con5 .wrap .box{ float:left; position: relative; width:135px; height:87px; background:gray; margin-right:126px;}
+#con5 .wrap .box:last-of-type{margin-right: 0;}
+
+
+/*--------------------------------footer---------------------------------------*/
+#footer{width:100%; padding:72px 0; background: black;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

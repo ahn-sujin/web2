@@ -1,0 +1,149 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR Regular';
+}
+a{
+    text-decoration: none;
+}
+ol,ul,li{
+    list-style: none;
+}
+
+/*pc 버전*/
+#con5{
+    width:100%;
+    padding:100px 0;
+    text-align: center;
+}
+#con5 .inner{
+    width:1180px;
+    margin: 0 auto;
+}
+#con5 .inner::after{
+    content: '';
+    clear: both;
+    display: block;
+}
+#con5 .title{
+    font-size:24px;
+    color: #444;
+}
+#con5 .txt{
+    font-size: 14px ;
+    color: #999;
+    margin:20px 0 40px;
+}
+#con5 .wrap{
+    width:100%; 
+    height:720px;
+    position: relative;
+}
+#con5 .wrap .box{
+    position: absolute;
+    width:32% ;
+    height:32.7% ;
+    overflow: hidden;
+}
+#con5 .wrap .box:nth-of-type(2n){
+    height:64%
+}
+#con5 .wrap .box:nth-of-type(1){
+    left:0 ;
+    top:0 ;
+}
+#con5 .wrap .box:nth-of-type(2){
+    left:34%;
+    top:0 ;
+}
+#con5 .wrap .box:nth-of-type(3){
+    right: 0;
+    top: 0;
+}
+#con5 .wrap .box:nth-of-type(4){
+    left:0 ;
+    bottom:0 ;
+}
+#con5 .wrap .box:nth-of-type(5){
+    left: 34%;
+    bottom:0 ;
+}
+#con5 .wrap .box:nth-of-type(6){
+    right:0 ;
+    bottom:0 ;
+}
+
+#con5 .wrap .box img{
+    display: block;
+    width:100%;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+}
+
+/*반응형*/
+@media screen and (max-width:1024px){
+    #con5{
+        padding:80px 40px;
+    }
+    #con5 .inner{
+        width:100%;
+    }
+    #con5 .wrap{
+        width:773px;
+        height:468px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width:768px){
+    #con5{
+        padding:80px 20px;
+    }
+    #con5 .wrap{
+        width:628px;
+        height:400px;
+    }
+}
+
+@media screen and (max-width:640px){ /*사진 2개씩 정렬*/
+    #con5{
+        padding:60px 20px;
+    }
+    #con5 .wrap{
+        width:480px;
+        height: auto;
+    }
+    #con5 .wrap .box{
+        position: relative;
+        float:left;
+        width:48%;
+        height:185px; 
+        margin: 0 3% 15px 0;
+    }
+    #con5 .wrap .box:nth-of-type(2n){
+        margin-right:0;
+        height:185px;
+    }
+    #con5 .wrap .box:nth-of-type(2){
+        left:0;
+    }
+    #con5 .wrap .box:nth-of-type(5){
+        left: 0;
+    }
+    #con5 .wrap .box:nth-of-type(2n+1) img{
+        width:120%;
+    }
+    #con5 .wrap .box:nth-of-type(2n) img{
+        transform: translate(-50%,-48%);
+    }
+
+}
+
+@media screen and (max-width:480px){ /*사진 1개씩 정렬*/
+    #con5 .wrap .box{
+        width:320px;
+    }
+}

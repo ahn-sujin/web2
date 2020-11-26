@@ -1,0 +1,175 @@
+*{margin: 0; padding: 0; box-sizing: border-box}
+ul, ol, li{list-style: none}
+a{text-decoration: none;}
+
+#visual{width: 100%; height: 800px; background: url('../img/bread-5.jpg') no-repeat fixed ; background-size: cover;}
+
+#visual img{width: 100%;}
+
+
+.content{width: 100%; padding: 120px 0px}
+.content .inner{width: 1180px; margin: 0 auto;}
+.content .inner::after{content: ''; clear: both; display: block}
+.content img{width: 100%; display: block;}
+.content .title{font:bold 28px '맑은 고딕'; color: #1c1c7b;text-align: center; }
+.content .txt{margin: 20px auto 40px; font-size: 14px; color: #777; text-align: center;}
+.content .btn{display: block; width: 150px; height: 40px; border-radius: 15px; text-align: center; font: bold 14px/40px '맑은 고딕'; color: #333; background-color: rgba(51, 51, 51, 0.2); transition: 0.3s}
+.content .btn:hover{background-color: #333; color: white;}
+
+@media screen and (max-width:1200px){
+    .content{padding: 100px 0px;}
+    .content .inner{width: 900px; }
+}
+@media screen and (max-width:980px){
+    .content {padding: 80px 0px;}
+    .content .inner{width: 728px; }
+}
+@media screen and (max-width:767px){
+    .content {padding: 60px 0px;}
+    .content .inner{width: 600px; }
+}
+@media screen and (max-width:639px){
+    .content .inner{width: 440px; }
+}
+@media screen and (max-width:480px){
+    .content .inner{width: 320px; }
+}
+
+#services .txt{width: 75%}
+#services .box{float: left; width: 49%; height: 200px; margin : 0 2% 25px 0; background: #eee;}
+#services .box:nth-of-type(2n){margin-right: 0;}
+
+#services .box.left .msg{float: left;}
+#services .box.left .pic{float: right;}
+
+#services .box.right .msg{float: right}
+#services .box.right .pic{float: left;}
+
+@media screen and (max-width:1200px){
+    #services .box{width: 48.5%; margin-right: 3%;}
+}
+
+@media screen and (max-width:980px){
+    #services .box{width: 48.5%; margin-right: 3%; margin-bottom: 20px; }
+}
+@media screen and (max-width:767px){
+    #services .box{margin-bottom: 20px; }
+}
+
+@media screen and (max-width:639px){
+    #services .box{width: 48%; margin-right: 4%;}
+}
+
+@media screen and (max-width:480px){
+    #services .box{width: 100%; margin-right: 0%;}
+}
+
+
+#about .inner{width: 100%;}
+#about .box{float: left; width: 50%; height: 500px; border: 1px solid black;}
+#about .box.pic{background:url('../img/bread-1.jpg') center no-repeat; background-size: cover;}
+#about .box.msg{padding: 120px;}
+#about .box.msg .title{text-align: left}
+#about .box.msg .txt{text-align: left}
+
+@media screen and (max-width:1200px){
+    #about .box{height: 450px;}
+    #about .box.msg{padding: 90px;}
+}
+@media screen and (max-width:980px){
+    #about .box{height: 400px;}
+    #about .box.msg{padding: 60px;}
+}
+@media screen and (max-width:767px){
+    #about .box{height: 350px;}
+    #about .box.msg{padding: 30px;}
+}
+@media screen and (max-width:639px){
+    #about .box{width: 100%; height: 300px;}
+}
+@media screen and (max-width:480px){}
+
+
+#barbers .box{float: left; width: 376px; height: 300px; margin-right: 25px; background: #eee;}
+#barbers .box:last-of-type{margin-right: 0;}
+
+@media screen and (max-width:1200px){
+    #barbers .box{width: 283px;}
+}
+@media screen and (max-width:980px){
+    #barbers .box{width: 229px; margin-right: 20px;}
+}
+@media screen and (max-width:767px){
+    #barbers .box{width: 48.5%; margin-right: 3%; margin-bottom: 20px;}
+    #barbers .box:nth-of-type(2n){margin-bottom: 20px; margin-right: 0;}
+}
+
+@media screen and (max-width:639px){
+    #barbers .box{width: 100%; margin-bottom: 20px;}
+}
+
+
+
+#gallery{padding: 0;  background:url('../img/bread-3.jpg') center no-repeat; background-size: cover}
+#gallery .box{float: left; width: 60%; height: 500px; padding: 120px; }
+#gallery .box .title{text-align: left; color: white;}
+#gallery .box .txt{text-align: left; color: white;}
+#gallery .btn{background-color: rgba(0, 0, 0, 0.3); color: white;}
+
+@media screen and (max-width:1200px){
+    #gallery .box{height: 450px; padding: 90px;}
+}
+@media screen and (max-width:980px){
+    #gallery .box{height: 450px; padding: 60px;}
+}
+@media screen and (max-width:767px){
+    #gallery .box{height: 400px; width: 100%; padding: 60px 30px;}
+}
+
+#testimonials .txt{width: 75%}
+#testimonials .box{width: 60%; margin: 0 auto; }
+#testimonials .box > div{float: left;}
+#testimonials .box .pic{width: 70px; height: 70px; border-radius: 100%; margin-right: 40px; background: #ccc}
+#testimonials .box .profile{width: calc(100% - 110px);}
+
+#testimonials .box .profile .name{margin-bottom: 10px; font: bold 20px '맑은 고딕'; color: #1c1c7b}
+#testimonials .box .profile .mention{color: #777}
+#testimonials .box .profile .sns>li{display: inline-block; margin: 20px 8px; color: #1c1c7b}
+@media screen and (max-width:1200px){
+    #testimonials .box{width: 100%; padding: 90px;}
+}
+@media screen and (max-width:980px){
+    #testimonials .box{padding: 60px;}
+    
+}
+@media screen and (max-width:767px){
+    #testimonials .txt{width: 100%}
+    #testimonials .box{padding: 60px 30px;}
+}
+
+#blog{}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
